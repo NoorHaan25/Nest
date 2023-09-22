@@ -1,0 +1,11 @@
+.invalid{
+  background-color: var(--colorBorder);
+  padding: 5px 10px;
+  width: fit-content;
+  position: relative;
+  bottom: -10px;
+  border-radius: 5px;
+}
+.invalid > p{
+  margin-bottom: 0;
+}

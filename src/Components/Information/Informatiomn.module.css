@@ -1,0 +1,14 @@
+.information{
+
+}
+.information .card{
+
+}
+.information .card > h2{
+  font-size: 21px;
+  font-weight: 700;
+}
+.information .card > p{
+  color: var(--colorBody);
+  line-height: 1.9;
+}

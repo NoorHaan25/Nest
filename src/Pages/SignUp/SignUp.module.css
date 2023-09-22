@@ -1,0 +1,48 @@
+.signup .signup-heading{
+  padding-bottom: 20px;
+  text-align: center;
+  color: var(--mainColor);
+}
+.signup .signup-heading > h1{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.signup form{
+  border: 1px solid var(--colorBorder);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.signup .wrapper-input{
+  padding-bottom: 22px;
+}
+.signup .wrapper-input > label{
+display: block;
+color: var(--colorBody);
+padding-bottom: 10px;
+}
+.signup .wrapper-input > label > span{
+  color: var(--colorRed);
+  padding-left: 5px;
+}
+.signup .wrapper-input input{
+  width: 100%;
+  padding: 10px;
+}
+.signup input[type="submit"]{
+  background-color: var(--mainColor);
+  color: var(--colorWhite);
+  padding: 10px 20px;
+  font-weight: 700;
+}
+.signup .check-password{
+
+  border: 1px solid var(--colorRed);
+
+}
+.signup .text-check-password{
+  color: var(--colorRed);
+  padding: 10px 0;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}

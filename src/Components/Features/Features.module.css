@@ -1,0 +1,32 @@
+.features{
+  padding-top: var(--padding-top);
+  padding-bottom: var(--padding-bottom);
+}
+.features .card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--colorBackground1);
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin: 5px;
+}
+.features .feature-img > img{
+  width: 55px;
+  transition: all 0.3s linear;
+}
+.features .card:hover .feature-img > img{
+  transform: translateY(-5px);
+}
+.features .feature-text{
+  width: 150px;
+}
+.features .feature-text > h3{
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--font-heading);
+}
+.features .feature-text > p{
+  color: var(--colorBody);
+  font-size: 15px;
+}

@@ -1,0 +1,14 @@
+.social-media{
+  display: flex;
+
+}
+.social-media > svg{
+  color: var(--mainColor);
+  padding: 7px ;
+  font-size: 18px;
+  transition: color 0.3s linear;
+  cursor: pointer;
+}
+.social-media > svg:hover{
+  color: var(--colorHover);
+}

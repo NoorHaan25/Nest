@@ -1,0 +1,194 @@
+.message{
+  text-align: center;
+}
+.message > p{
+  background-color: var(--colorBackground1);
+  border-top: 3px solid var(--mainColor);
+  color: var(--mainColor);
+  font-weight: 700;
+  padding: 20px;
+  border-radius: 5px;
+}
+.details{
+  background-color: var(--colorBackground1);
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+.heading{
+  position: relative;
+  padding-bottom: 10px;
+}
+.heading::after{
+  content: '';
+  position: absolute;
+  background-color: #e8e8e8;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -5px;
+}
+.heading::before{
+  content: '';
+  position: absolute;
+  background-color: var(--mainColor);
+  width: 10%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  z-index: 2;
+}
+.heading > h1{
+  font-size: 18px;
+  font-weight: 700;
+}
+.items{
+  padding-top: 50px ;
+}
+.details .item{
+  padding-top: 30px;
+}
+.details .item > h3{
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+.info-order{
+  padding-top: 30px;
+}
+.info-order ul{
+  padding-left: 0;
+}
+.info-order ul li{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.info-order ul li > span:first-child{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-heading);
+}
+.info-order ul li > span:last-child{
+  color : var(--colorBody);
+  font-weight: 600;
+}
+.saved-products{
+  padding-top: 30px;
+}
+.saved-products table{
+  width: 100%;
+  border-spacing: 1px;
+  border: 1px solid var(--colorWhite);
+}
+.saved-products table thead {
+  border-radius: 20px;
+  background-color: var(--mainColor);
+}
+.saved-products table thead tr {
+  
+  color: var(--colorWhite);
+  text-align: center;
+}
+.saved-products table thead tr th{
+  padding: 15px 20px;
+  border-right: 1px solid var(--colorWhite);
+}
+.saved-products table thead tr th:first-child{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.saved-products table thead tr th:last-child{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.saved-products table tbody tr td{
+  padding: 15px 20px;
+  color: var(--colorBody);
+  text-align: center;
+}
+.saved-products table tbody tr td:first-child{
+  cursor: pointer;
+}
+.saved-products table tbody tr td .img-product img{
+  width: 80px;
+}
+.saved-products table tbody tr td:nth-child(3){
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--mainColor);
+}
+.saved-products table tbody tr td:first-child{
+  width: 100px;
+}
+.details > ul{
+  margin-top: 25px;
+}
+.order-received .buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.order-received .buttons .wrapper-button button{
+  display: inline-block;
+  padding: 15px 30px;
+  font-weight: 700;
+}
+.order-received .buttons > .wrapper-button:first-child > button{
+  background-color: var(--mainColor);
+  color: var(--colorWhite);
+  
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.order-received .buttons > .wrapper-button:last-child > button{
+  background-color: unset;
+  color: var(--mainColor);
+}
+@media screen and (max-width:991.5px){
+  .saved-products table thead{
+    display: none;
+  }
+  .saved-products table tbody tr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   border:1px solid var(--colorBorder);
+    border-radius: 5px;
+    margin: 20px 0;     
+  }
+  .saved-products table tbody tr td{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 15px 20px;
+    color: var(--colorBody);
+    border-bottom: 1px solid var(--colorBorder);
+    width: 100%;
+    padding: 26px 20px;
+  }
+  .saved-products table tbody tr td::before{
+    content: attr(data-item);
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--mainColor);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+  } 
+  .saved-products table tbody tr td:first-child {
+    border: none;
+    padding: 26px 20px;
+  }
+  .saved-products table tbody tr td:last-child{
+    border: none;
+  }
+}

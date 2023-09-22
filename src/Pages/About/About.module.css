@@ -1,0 +1,241 @@
+.about .section-about > img{
+  border-radius: 10px;
+}
+.about .about-text{
+  padding-top: 50px;
+}
+.about .about-text >h2{
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+.about .about-text .paragraph-about{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: var(--colorBody);
+  font-size: 16px;
+  line-height: 1.7;
+}
+.about .about-img{
+  padding-top: 20px;
+  gap: 10px;
+}
+.about .about-img > img{
+  width: 150px;
+  margin-bottom: 15px;
+}
+.provide{
+  padding-top: var(--padding-top);
+  position: relative;
+}
+.provide .header{
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+}
+.provide .header::after{
+  content: 'aaaaaaaaa';
+  position: absolute;
+  text-decoration: wavy underline var(--colorBorderMainColor) 5px;
+  color: transparent;
+  font-size: 30px;
+  top: 5px;
+  left: 50%;
+  transform:  translateX(-50%);
+  z-index: -1;
+}
+.provide .card-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--colorBorder);
+  border-radius: 15px;
+  padding: 50px 30px;
+  margin-top: 12px;
+}
+.provide .card-about > .about-icon > img{
+  width: 95px;
+  margin-bottom: 20px;
+}
+.provide .card-about > h3{
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+}
+.provide .card-about > h3{
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.9px;
+}
+.provide .card-about > p{
+  padding-top: 10px;
+  color: var(--colorBody);
+}
+.provide .card-about > a{
+  color: var(--mainColor);
+  padding: 10px 0;
+  font-size: 17px;
+  transition: all 0.3s linear;
+}
+.provide .card-about >a:hover{
+  color: var(--colorHover);
+}
+.performance{
+  padding-top: var(--padding-top);
+}
+.performance-text{
+  padding-left: 20px;                                                   
+}
+.performance-text h3{
+  color: var(--mainColor);
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  margin-bottom: 17px;
+}
+.performance-text div{
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+
+}
+.performance-text p{
+  color: var(--colorBody);
+  margin-bottom: 20px;
+}
+.mission{
+  padding-top: var(--padding-top);
+padding-bottom:  var(--padding-bottom);
+}
+.card-mission{
+  padding-bottom: 10px;
+}
+.card-mission h3{
+  font-weight: 700;
+  font-size: 30px;
+  padding-bottom: 7px;
+}
+.card-mission p{
+  color: var(--colorBody);
+}
+.about-count{
+  background-image: url(../../img/about-9.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 80px 0;
+  border-radius: 10px;
+  z-index: 1;
+}
+.about-count::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(75 103 90 / 80%);
+  border-radius: 10px;
+
+  inset: 0;
+  z-index: -1;
+}
+.card-counter{
+  text-align: center;
+  height: 100%;
+  padding: 20px 0;
+}
+.card-counter > .counter span{
+  color: var(--colorWhite);
+  font-weight: 700;
+  font-size: 60px;
+}
+.card-counter > h4{
+  color: var(--colorWhite);
+  font-weight: 700;
+  font-size: 20px;
+}
+.team {
+  padding-top: var(--padding-top);
+}
+.team .team-text > h3{
+  color: var(--mainColor);
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  margin-bottom: 17px;
+}
+.team-text div{
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+
+}
+.team-text p{
+  color: var(--colorBody);
+  margin-bottom: 20px;
+}
+
+.imgs-team > .img-team > img{
+  border-radius: 20px;
+}
+.info-client{
+  position: relative;
+  text-align: center;
+  background-color: var(--colorWhite);
+  width: 80%;
+  border-radius: 20px;
+  padding: 10px;
+  left: 50%;
+  bottom: 75px;
+  transform: translate(-50% , 0);
+  transition: all 0.3s linear;
+}
+.img-team:hover > .info-client{
+  transform: translate(-50% , -20px);
+}
+.info-client > h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+.info-client > p{
+  color: var(--colorBody);
+  font-size: 17px;
+}
+.social-media > svg{
+  color: var(--mainColor);
+  padding: 7px ;
+  font-size: 18px;
+  transition: color 0.3s linear;
+  cursor: pointer;
+}
+.social-media > svg:hover{
+  color: var(--colorHover);
+}
+@media screen and (max-width: 991.5px) {
+  .about .about-text{
+    padding-top: 20px;
+  }
+  .performance-text{
+    padding-top: 30px;                                                   
+  }
+  .imgs-team  {
+  padding-top: 20px;
+}
+  
+}
+@media screen and (max-width: 767.5px) {
+  .about .about-img{
+    justify-content: center;
+  }.provide .card-about > .about-icon > img{
+    width: 90px;
+  }
+  .performance-text div{
+    font-size: 25px;
+  }
+}

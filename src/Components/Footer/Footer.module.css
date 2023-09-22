@@ -1,0 +1,78 @@
+footer{
+  padding-top: var(--padding-top);
+}
+.logo {
+  width: 120px;
+}
+footer .card{
+ 
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+footer .card >p{
+  padding: 20px 0 15px 0;
+}
+footer .card > h2{
+  font-size: 22px;
+  letter-spacing: 0.9px;
+  padding: 0 0 15px 0;
+  font-weight: 600;
+}
+footer .card .info > .info-item{
+  display: flex;
+  padding-bottom: 10px;
+}
+footer .card .info .info-item svg{
+  color: var(--mainColor);
+  padding-right: 15px;
+  
+}
+footer .card .info .info-item span{
+  font-size: 15px;
+  
+}
+footer .card .info .info-text strong{
+    font-weight: 400;
+    padding-right: 5px;
+    font-size: 15px;
+  
+}
+footer .card .info .info-text > a{
+  color: var(--mainColor);
+}
+footer .card > ul{
+  padding-left: 0;
+}
+footer .card > ul > li{
+    margin-bottom: 11px;
+    font-weight: 400;
+    transition: all 0.7s linear;
+    cursor: pointer;
+}
+footer .card > ul > li:hover{
+    color: var(--mainColor);
+}
+footer .card .app{
+  margin-bottom: 30px;
+}
+footer .card .img-app{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+footer .card .img-app img{
+  width: 90px;
+object-fit: contain;
+transition: all 0.3s linear;
+}
+footer .card .img-app img:hover{
+  transform: translateY(-7px)
+}
+footer .card .payment > img{
+  padding-top: 15px;
+  transition: all 0.3s linear;
+}
+footer .card .payment > img:hover{
+  transform: translateY(-7px)
+}

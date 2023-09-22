@@ -1,0 +1,124 @@
+.hide{
+  
+  opacity: 0;
+  z-index: -55555;
+}
+.show{
+  opacity: 1;
+  z-index: 55555;
+}
+.navbar-small-screen{
+  position: fixed;
+  inset: 0;
+  background-color: rgb(255 255 255 / 40%);
+  height: 100%;
+ 
+  transition: all 0.8s ease-in-out;
+}
+.content-navbar-small{
+  background-color: var(--colorWhite);
+  padding: 20px;
+  max-height: 100vh;
+  overflow-y: scroll;
+  width: 80%;
+  transform: translateX(-100%);
+  transition: all 0.5s linear;
+}
+.active-navbar{
+  transform: translateX(0%);
+}
+.close {
+  padding: 20px 0;
+}
+.close > svg{
+  background-color: var(--colorLink);
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  border-radius: 50%;
+  padding: 6px;
+  cursor: pointer;
+}
+.navbar-small-screen .search-products{
+  padding: 20px 0;
+}
+.navbar-small-screen .buttons{
+  display: flex;
+  align-items: center;
+ ; gap: 10px;
+}
+.navbar-small-screen .buttons > button{
+  width: 50%;
+  padding: 8px 0;
+  border-radius: 5px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+}
+.content-navbar {
+  opacity: 0;
+  display: none;
+  transition: all 0.5s ease-in-out;
+}
+.activeLinks{
+  display: block;
+  opacity: 1;
+}
+.content-navbar .links > ul > li,
+.Categories > ul > li{
+ 
+  padding: 13px 0;
+  border-bottom:  1px solid var(--colorBorder);
+
+}
+.content-navbar .links > ul > li > a , 
+.Categories > ul > li > a{
+  color: var(--colorHeading);
+  font-weight: 600;
+  font-size: 14px;
+}
+.button-active{
+  background-color: #fde1bd;
+  color: var(--mainColor);
+}
+.communication{
+  border: 1px solid var(--colorBorder);
+  border-radius: 5px;
+  padding: 15px;
+
+}
+.communication  .wrapper-communication .item{
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
+}
+.communication  .wrapper-communication .item svg{
+  padding-right: 7px;
+  color: var(--mainColor);
+}
+.communication  .wrapper-communication .item span{
+  font-size: 14px;
+  color:var(--colorHeading)
+}
+.communication .buttons-signUp{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.communication .buttons-signUp > .button{
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+.communication .buttons-signUp > .button > a{
+  color: var(--colorWhite);
+  font-size: 15px;
+}
+.communication .buttons-signUp{
+  padding-top: 50px ;
+}
+.communication .buttons-signUp > .button:first-child{
+  background-color: var(--colorRating);
+}
+.communication .buttons-signUp > .button:last-child{
+  background-color: var(--mainColor);
+}

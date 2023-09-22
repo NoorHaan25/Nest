@@ -1,0 +1,29 @@
+.pagination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.pagination ul{
+  display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+.pagination ul > li{
+  padding: 15px;
+    border: 1px solid var(--colorBorder);
+    font-weight: 600;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:5px;
+    border-radius: 50%;
+cursor: pointer;
+}
+.pagination ul > .active{
+  background-color: var(--mainColor);
+  color: var(--colorWhite);
+}

@@ -1,0 +1,12 @@
+.beverages .card-item{
+  padding: 15px 0
+}
+.beverages .card-item > a{
+  color: var(--mainColor);
+  font-weight: bold;
+    font-size: 20px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+
+}
