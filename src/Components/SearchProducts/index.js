@@ -5,15 +5,15 @@ import { getAllProducts } from "../../services/api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { allProducts } from "../../allProducts";
+import { useSelector } from "react-redux";
 export default function SearchProducts() {
   const navigate = useNavigate()
+  const products = useSelector((state) => state.products);
   const [searchProduct, setSearchProduct] = useState("");
   const [resultSearch, setResultSearch] = useState([]);
   function fetchData(value) {
-    getAllProducts().then((response) => {
-      const data = response.data;
-      const dataAllProducts = allProducts(data)
-      //console.log('dataAllProducts' , dataAllProducts);
+      const dataAllProducts = allProducts(products)
+      console.log('dataAllProducts' , dataAllProducts);
       const result = dataAllProducts.filter((product) => {
         return (
           value &&
@@ -24,7 +24,6 @@ export default function SearchProducts() {
       });
       console.log(result);
       setResultSearch(result);
-    });
   }
   function handleChange(value) {
     setSearchProduct(value);

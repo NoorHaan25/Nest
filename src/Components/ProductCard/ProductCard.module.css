@@ -4,6 +4,8 @@
   align-items: center;
   text-align: center;
   padding: 20px ;
+  border: 1px solid var(--colorBorder);
+  margin-bottom: 30px;
 }
 .other-card{
   background-color: var(--colorWhite);

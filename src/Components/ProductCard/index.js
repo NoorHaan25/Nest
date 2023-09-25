@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { addToCart } from "../../rtk/slices/cartSlice";
 import { addToWhishlist } from "../../rtk/slices/whishlist";
 function ProductCard({ product , productQuickViewFun  , type}) {
-  // console.log(product);
   const dispatch = useDispatch()
   return (
     <div className={`${type === 'rating' || 'discount' ||  'top-order' ? styles['other-card'] : null} ${styles.card}`}>

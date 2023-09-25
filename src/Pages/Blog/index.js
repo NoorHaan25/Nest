@@ -22,7 +22,7 @@ export default function Blog() {
     getPosts();
   }, []);
   function pagesNumber(){
-    console.log(`/blog/page/${pageIds[1]}`);
+    // console.log(`/blog/page/${pageIds[1]}`);
     if(location.pathname === `/blog/page/${pageIds[1]}` || location.pathname === '/blog'){
       return(
         <ul
@@ -35,6 +35,7 @@ export default function Blog() {
             activeClassName={"active"}
             isPending={true}
             pendingClassName={styles.pending}
+            onClick={()=>{window.scrollTo(0, 0);}}
           >
             1
           </NavLink>
@@ -46,6 +47,7 @@ export default function Blog() {
             activeClassName={styles.active}
             isPending={true}
             pendingClassName={styles.pending}
+            onClick={()=>{window.scrollTo(0, 0);}}
           >
             2
           </NavLink>

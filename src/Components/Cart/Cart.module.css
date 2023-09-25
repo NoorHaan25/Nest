@@ -81,7 +81,7 @@
   background-color: var(--colorWhite);
   z-index: 5555;
   transform: translateX(0%);
-  transition: all 0.5s linear;
+  transition: all 0.3s ease-in;
 }
 .cartHide-small{
   position: fixed;
@@ -90,9 +90,6 @@
   z-index: 5555;
   transform: translateX(100%);
 }
-/* .wrapper-item{
-  overflow-y: scroll;
-} */
 .info-cart{
   display: flex;
   align-items: center;
@@ -153,7 +150,6 @@
   align-items: center;
 }
 .wrapper-item .total > h4{
-  /* display: inline-block; */
   color: var(--colorBody);
   text-align: left;
   font-size: 18px;

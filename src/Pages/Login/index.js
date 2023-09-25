@@ -3,7 +3,7 @@ import styles from "./login.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { getUserInfo } from "../../services/api";
 import { getUser } from "../../rtk/slices/usersSlice";
 import { useNavigate } from "react-router-dom";
@@ -13,12 +13,12 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [users, setUsers] = useState([]);
   const [checkPassword, setCheckPassward] = useState(true);
-  const loginUser = useSelector((state) => state.user);
-  console.log("login", loginUser);
+  // const loginUser = useSelector((state) => state.user);
+  // console.log("login", loginUser);
   const navigate = useNavigate();
   const fetchUsers = async () => {
     const response = await getUserInfo();
-    console.log("response", response.data);
+    // console.log("response", response.data);
     setUsers(response.data);
   };
   useEffect(() => {

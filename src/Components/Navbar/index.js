@@ -17,9 +17,7 @@ export default function LinksNavbar() {
   const [scroll , setScroll] = useState(false);
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products);
-  const loading = useSelector((state) => state.products.loading);
   const [openNavbar, setOpenNavbar] = useState(false)
-  //console.log("products-state", loading);
   const vegetables = products.vegetables || [];
   const fruits = products.fruits || [];
   const beverages = products.beverages || [];
@@ -46,7 +44,6 @@ export default function LinksNavbar() {
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setScroll(true);
-      //console.log('true', scroll);
     } else {
       setScroll(false);
     }
@@ -70,10 +67,10 @@ export default function LinksNavbar() {
     <section className={`${scroll ? styles['navbar-active'] : ''} ${styles['navbar-section']}`}>
       <Container fluid>
         <Row className="align-items-center justify-content-between">
-        <Col md={2} sm={2} xs={2} className={`${styles['col-hide-lg']}`}>
+        <Col md={3} sm={3} xs={3} className={`${styles['col-hide-lg']}`}>
           <div className={styles['user']}><User/></div>
         </Col>
-          <Col lg={4} md={4} sm={4} xs={4}>
+          <Col lg={4} md={6} sm={6} xs={6}>
             <div
               className={styles["wrapper-categories"]}
               onClick={() => toggleHandler()}
@@ -196,7 +193,7 @@ export default function LinksNavbar() {
             <Logo logoStyle={"logoStyle"} />
             </div>
           </Col>
-          <Col lg={8} md={2} sm={2} xs={2}>
+          <Col lg={8} md={3} sm={3} xs={3}>
             <nav className={`${styles["navbar"]} d-flex align-items-center justify-content-end`}>
             <div className={styles['cart']}>
               <Cart cartName='cart-small-screen'/>

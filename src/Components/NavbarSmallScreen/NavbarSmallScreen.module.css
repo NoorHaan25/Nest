@@ -1,5 +1,4 @@
 .hide{
-  
   opacity: 0;
   z-index: -55555;
 }
@@ -13,7 +12,7 @@
   background-color: rgb(255 255 255 / 40%);
   height: 100%;
  
-  transition: all 0.8s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .content-navbar-small{
   background-color: var(--colorWhite);
@@ -28,7 +27,7 @@
   transform: translateX(0%);
 }
 .close {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .close > svg{
   background-color: var(--colorLink);
