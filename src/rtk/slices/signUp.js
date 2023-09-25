@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import { getClientInfo } from "../../services/api";
 const sliceName = "usersSlice";
-const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://api-xh9w.onrender.com";
 export const signUsers = createAsyncThunk(
   `${sliceName}/signUsers`,async (user) => {
     const response = await axios.post(`${BASE_URL}/signUp` , user);
