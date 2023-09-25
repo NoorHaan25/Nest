@@ -165,10 +165,6 @@
   font-size: 13px;
   font-weight: 700;
 }
-/* .products-tab .wrapperImg-best-sells{
-  position: absolute;
-  bottom: 0;
-} */
 .products-tab .wrapperImg-best-sells{
   position: relative;
   z-index: 1;
@@ -480,6 +476,9 @@ background-color: var(--colorLightBlue);
 .content-client .image-client{
   transform: translateX(-50%);
   left: 50%;
+}
+.special-discount .card-count-down .count-down{
+  padding-left: 0;
 }
 }
 @media screen and (min-width:767.5px) and (max-width:991.5px){

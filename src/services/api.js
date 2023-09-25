@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:9000";
+const BASE_URL = "https://api-xh9w.onrender.com";
 export const getAllPosts = () => {
   return axios.get(`${BASE_URL}/postsAll`);
 };
