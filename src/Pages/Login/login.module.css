@@ -1,57 +1,46 @@
-
-
-.login .login-heading{
+.login .login-heading {
   padding-bottom: 20px;
   text-align: center;
   color: var(--mainColor);
 }
-.login .login-heading > h1{
+.login .login-heading > h1 {
   font-size: 40px;
   font-weight: 700;
 }
 
-.login form{
+.login form {
   border: 1px solid var(--colorBorder);
   padding: 10px 20px;
   border-radius: 5px;
 }
-.login .wrapper-input{
+.login .wrapper-input {
   padding-bottom: 22px;
 }
-.login .wrapper-input > label{
-display: block;
-color: var(--colorBody);
-padding-bottom: 10px;
+.login .wrapper-input > label {
+  display: block;
+  color: var(--colorBody);
+  padding-bottom: 10px;
 }
-.login .wrapper-input > label > span{
+.login .wrapper-input > label > span {
   color: var(--colorRed);
   padding-left: 5px;
 }
-.login .wrapper-input input{
+.login .wrapper-input input {
   width: 100%;
   padding: 10px;
 }
-.login input[type="submit"]{
+.login input[type="submit"] {
   background-color: var(--mainColor);
   color: var(--colorWhite);
   padding: 10px 20px;
   font-weight: 700;
 }
-.checkInputPassword{
+.checkInputPassword {
   border: 1px solid var(--colorRed);
 }
-.checkPassword{  color: var(--colorRed);
+.checkPassword {
+  color: var(--colorRed);
   padding: 10px 0;
   font-family: var(--font-heading);
-  font-weight: 600;}
-/* .login .wrapper-input .wrapper-password{
-  position: relative;
+  font-weight: 600;
 }
-.login .wrapper-input .wrapper-password svg{
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--mainColor);
-  cursor: pointer;
-} */

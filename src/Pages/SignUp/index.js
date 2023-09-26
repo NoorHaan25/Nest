@@ -7,9 +7,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { signUsers } from '../../rtk/slices/signUp';
 import {useNavigate} from 'react-router-dom'
 export default function SignUp() {
-  const {loading , error} = useSelector((state) => state.users);
   const users = useSelector((state)=>state.user)
-  console.log('users' , users);
+  //console.log('users' , users);
   const dispatch = useDispatch()
   const [userName, setUserName] = useState("");
   const [email, setEmail] = useState("");

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "./SearchProducts.module.css";
 import { useNavigate } from "react-router-dom";
-import { getAllProducts } from "../../services/api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { allProducts } from "../../allProducts";
@@ -13,16 +12,16 @@ export default function SearchProducts() {
   const [resultSearch, setResultSearch] = useState([]);
   function fetchData(value) {
       const dataAllProducts = allProducts(products)
-      console.log('dataAllProducts' , dataAllProducts);
+      //console.log('dataAllProducts' , dataAllProducts);
       const result = dataAllProducts.filter((product) => {
         return (
-          value &&
-          product &&
-          product.name &&
-          product.name.toLowerCase().includes(value)
+          value !== '' &&
+          product !== null &&
+          product.name !== null&&
+         ( product.name.toLowerCase().includes(value) || product.name.toUpperCase().includes(value))
         );
       });
-      console.log(result);
+      //console.log(result);
       setResultSearch(result);
   }
   function handleChange(value) {
@@ -60,10 +59,3 @@ export default function SearchProducts() {
     </div>
   );
 }
-// <ul class="menu">
-// <li class="active">en</li>
-// <li>ar</li>
-// </ul>
-
-// const products = useSelector((state) => state.products);
-// // console.log('products', products);
