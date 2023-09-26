@@ -27,7 +27,6 @@ export default function Login() {
 
   function onSubmitHandler(e) {
     e.preventDefault();
-    if (users.length > 0) {
       const checkEmail = users.find((user) => user.email === email);
       const checkPassword = users.find((user) => user.password === password);
       if (checkEmail) {
@@ -40,7 +39,6 @@ export default function Login() {
       } else {
         return null;
       }
-    }
   }
   return (
     <div className={styles["login"]}>
