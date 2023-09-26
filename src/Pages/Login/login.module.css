@@ -38,7 +38,7 @@
 .checkInputPassword {
   border: 1px solid var(--colorRed);
 }
-.checkPassword {
+.checkPassword , .checkEmail {
   color: var(--colorRed);
   padding: 10px 0;
   font-family: var(--font-heading);

@@ -13,6 +13,7 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [users, setUsers] = useState([]);
   const [checkPassword, setCheckPassward] = useState(true);
+  const [checkEmail, setCheckEmail] = useState(true);
   const loginUser = useSelector((state) => state.user);
   console.log("login", loginUser);
   const navigate = useNavigate();
@@ -27,18 +28,20 @@ export default function Login() {
 
   function onSubmitHandler(e) {
     e.preventDefault();
+    if(users.length > 0){
       const checkEmail = users.find((user) => user.email === email);
       const checkPassword = users.find((user) => user.password === password);
       if (checkEmail) {
         if (checkPassword) {
           navigate('/')
           dispatch(getUser(checkEmail));
+          window.scrollTo(0, 0);
         } else {
           setCheckPassward(false);
         }
       } else {
-        return null;
-      }
+        setCheckEmail(false);
+      }}
   }
   return (
     <div className={styles["login"]}>
@@ -62,6 +65,7 @@ export default function Login() {
                     setEmail(e.target.value);
                   }}
                 />
+                {checkEmail ? null : <div className={styles['checkEmail']}> The Email is not registered on this site</div>}
               </div>
               <div className={styles["wrapper-input"]}>
                 <label htmlFor="password">

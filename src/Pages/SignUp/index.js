@@ -27,6 +27,7 @@ export default function SignUp() {
         repeatPassword
       }
     ))
+  window.scrollTo(0, 0);
    navigate('/login')
     }else {
       setCheckPassword(false)
